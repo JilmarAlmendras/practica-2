@@ -1,5 +1,6 @@
 "use client";
 
+import { Card } from "@nextui-org/react";
 import React, { useState } from "react";
 
 function ExerciseThree() {
@@ -24,20 +25,28 @@ function ExerciseThree() {
 
   return (
     <div className="w-full flex flex-col gap-4 justify-center items-center">
-      <h1
-        className="text-2xl font-semibold"
-        style={style1}
-        onClick={handleClick1}
-      >
-        Título 1
-      </h1>
-      <h1
-        className="text-2xl font-semibold"
-        style={style2}
-        onClick={handleClick2}
-      >
-        Título 2
-      </h1>
+      <Card className="w-[500px] p-4 flex flex-col gap-4">
+        <p
+          className="text-2xl font-semibold"
+          style={style1}
+          onClick={handleClick1}
+        >
+          See the Aura of any unfinished Generator in your vicinity. Anytime
+          you’re repairing a Generator, your teammates will see the Aura of both
+          you and the Generator you’re repairing. The Guide also has a small
+          Tech Radius, which gives teammates a Great Skill Check Bonus and
+          reduced repair noise.
+        </p>
+        <p
+          className="text-2xl font-semibold"
+          style={style2}
+          onClick={handleClick2}
+        >
+          When you complete a Generator, gain a 5% repair charge for every
+          Survivor in your Tech Radius. Those charges will be applied to the
+          next Generator you repair.
+        </p>
+      </Card>
     </div>
   );
 }

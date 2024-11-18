@@ -2,6 +2,7 @@
 
 import { Button, Image } from "@nextui-org/react";
 import React, { useState } from "react";
+import "./page.css";
 
 function ExerciseOne() {
   const [visible, setVisible] = useState(true);
@@ -31,25 +32,25 @@ function ExerciseOne() {
     <div className="w-full flex flex-col gap-4 justify-center items-center">
       <div className="gallery flex gap-4">
         <Image
-          src="https://via.placeholder.com/150"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA7tf1NT8YAMt8yXYloni0TAlQw2YyY4w1zg&s"
           alt="Placeholder 1"
-          className={`transition-opacity duration-500 ${
-            visible ? "opacity-100" : "opacity-0"
-          } ${slide ? "h-auto" : "h-0 overflow-hidden"}`}
+          className={`${visible ? "fade-in" : "fade-out"} ${
+            slide ? "slide-down" : "slide-up"
+          }`}
         />
         <Image
-          src="https://via.placeholder.com/150"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA7tf1NT8YAMt8yXYloni0TAlQw2YyY4w1zg&s"
           alt="Placeholder 2"
-          className={`transition-opacity duration-500 ${
-            visible ? "opacity-100" : "opacity-0"
-          } ${slide ? "h-auto" : "h-0 overflow-hidden"}`}
+          className={`${visible ? "fade-in" : "fade-out"} ${
+            slide ? "slide-down" : "slide-up"
+          }`}
         />
         <Image
-          src="https://via.placeholder.com/150"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA7tf1NT8YAMt8yXYloni0TAlQw2YyY4w1zg&s"
           alt="Placeholder 3"
-          className={`transition-opacity duration-500 ${
-            visible ? "opacity-100" : "opacity-0"
-          } ${slide ? "h-auto" : "h-0 overflow-hidden"}`}
+          className={`${visible ? "fade-in" : "fade-out"} ${
+            slide ? "slide-down" : "slide-up"
+          }`}
         />
       </div>
       <div className="buttons flex gap-4">
